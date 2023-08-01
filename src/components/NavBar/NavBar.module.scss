@@ -11,15 +11,16 @@
     }
 }
 
-.linkActive {
-    color: $color-warning;
-}
+
 
 .nav__links {
     li {
         a {
-        //color: $color-light;
+        color: $color-light;
         text-decoration: none;
+        }
+        .linkActive {
+            color: $color-warning;
         }
         display:inline;
         margin: 0 24px;

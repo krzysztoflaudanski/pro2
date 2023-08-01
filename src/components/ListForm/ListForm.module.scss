@@ -1,17 +1,17 @@
 @import '../../styles/settings.scss';
 
-.columnForm {
+.listForm {
     text-align: center;
     padding: 10px;
 
     span {
-        margin: 0 10px 0;
-    }
+   margin: 0 10px 0;
+     }
 }
 
 @media (max-width: 599px) {
 
-    .columnForm {
+    .listForm {
         span {
             display: block;
         }
