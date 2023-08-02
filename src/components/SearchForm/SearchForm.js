@@ -8,8 +8,6 @@ import { updateSearching, } from '../../redux/store';
 
 const SearchForm = () => {
 
-
-
     const dispatch = useDispatch();
     const [search, setSearch] = useState('')
 
@@ -17,10 +15,10 @@ const SearchForm = () => {
         dispatch(updateSearching(''));
     }, []);
 
-
     const handleSubmit = e => {
         e.preventDefault();
         dispatch(updateSearching(search))
+        console.log(search)
         setSearch('')
     }
     return (

@@ -11,3 +11,14 @@
     justify-content: space-between;
     font-weight: bold;
 }
+
+.star {
+    background: none;
+    color: $color-yellow;
+    border:none;
+    cursor: pointer;
+}
+
+.favorite__star{
+    color: $color-warning;
+}
