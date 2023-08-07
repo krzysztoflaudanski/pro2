@@ -7,9 +7,9 @@ import { Navigate } from 'react-router-dom';
 
 const Favorite = () => {
 
-const cards = useSelector(state => getFavoriteCards(state))
+    const cards = useSelector(state => getFavoriteCards(state))
 
-if(cards.length === 0) return <Navigate to="/" />
+    if (cards.length === 0) return <Navigate to="/" />
 
     return (
         <section className={styles.favorite}>
@@ -17,9 +17,9 @@ if(cards.length === 0) return <Navigate to="/" />
                 <PageTitle>favorite</PageTitle>
             </div>
             <div className={styles.column}>
-            <ul className={styles.cards}>
-            {cards.map(card => <Card key={card.id} title={card.title} cardId={card.id} isActive={card.isFavorite}/>)}
-        </ul>
+                <ul className={styles.cards}>
+                    {cards.map(card => <Card key={card.id} title={card.title} cardId={card.id} isActive={card.isFavorite} />)}
+                </ul>
             </div>
         </section>)
 

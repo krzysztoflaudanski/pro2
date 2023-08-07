@@ -18,7 +18,6 @@ const SearchForm = () => {
     const handleSubmit = e => {
         e.preventDefault();
         dispatch(updateSearching(search))
-        console.log(search)
         setSearch('')
     }
     return (
