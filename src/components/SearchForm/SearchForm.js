@@ -13,7 +13,7 @@ const SearchForm = () => {
 
     useEffect(() => {
         dispatch(updateSearching(''));
-    }, []);
+    }, [dispatch]);
 
     const handleSubmit = e => {
         e.preventDefault();

@@ -2,6 +2,7 @@ import shortid from 'shortid';
 
 // selectors
 export const getListById = ({ lists }, listId) => lists.find(list => list.id === listId);
+console.log(getListById)
 export const getAllLists = ({ lists }) => lists;
 
 // actions
